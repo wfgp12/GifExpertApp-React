@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas realizadas al componente <GifCard /> debe hace match con el snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="League of Legends"
+      src="https://media3.giphy.com/media/h5C2kiESzaypGjXtTY/giphy-downsized-medium.gif?cid=30e1a8980bwmomcq8f4b3s8ykghycqqpca6srj9wp753clme&ep=v1_gifs_search&rid=giphy-downsized-medium.gif&ct=g"
+    />
+    <p>
+      League of Legends
+    </p>
+  </div>
+</div>
+`;

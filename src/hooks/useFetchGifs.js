@@ -4,9 +4,12 @@ import { getGifs } from "../helpers";
 export const useFetchGifs = (category) => {
     useEffect(() => {
         getGifs(category)
-            .then(resp => setGifs(resp))
+            .then(resp => {
+                setGifs(resp);
+                setIsLoading(false);
+            })
             .catch(err => console.error(err))
-            .finally(setIsLoading(false))
+            // .finally(setIsLoading(false))
         return () => {
             setGifs([])
             setIsLoading(true)

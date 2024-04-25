@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useState } from "react";
+import PropTypes from 'prop-types';
 
 // eslint-disable-next-line react/prop-types
 export const AddCategory = ({ onSubmit }) => {
@@ -17,7 +18,7 @@ export const AddCategory = ({ onSubmit }) => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} aria-label="form">
       <input
         type="text"
         placeholder="buscar gifs"
@@ -26,4 +27,9 @@ export const AddCategory = ({ onSubmit }) => {
       />
     </form>
   )
+}
+
+
+AddCategory.propTypes = {
+  onSubmit: PropTypes.func.isRequired
 }
